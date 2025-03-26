@@ -75,13 +75,19 @@ p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .body{
-    display: grid;
+    display: flex;
     justify-items: center;
 }
-@media screen {
+@media (max-width: 768px) {
     .body{
         display: flex;
         justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .body{
+        display: grid;
+        justify-items: center;
     }
 }
         </style>
